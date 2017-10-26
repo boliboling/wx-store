@@ -1,0 +1,8 @@
+<template name="submit">
+	<wview class="pdetail-submit">
+		<wview class="pdetail-footer-item collect {{collection ? 'footer-active':''}}" bindtap="collect">收藏</wview>
+		<navigator open-type="navigate" url="/pages/cart/cart" class="pdetail-footer-item cart {{cart_num == 0 ? '' : 'cart_num'}}" data-num="{{cart_num}}">购物车</navigator>
+		<wview class="pdetail-footer-item add-to-cart" bindtap="addToCart">加入购物车</wview>
+		<wview class="pdetail-footer-item shopping" bindtap="showPara">立即购买</wview>
+	</wview>
+</template>

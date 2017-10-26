@@ -1,0 +1,13 @@
+<template name="addressItem">
+	<view class="weui-cells weui-cells_after-title">
+	    <view data-index="{{index}}" bindtap="chooseDefault" class="weui-cell {{item.choose == 1 ? 'address-choose' : ''}}">
+	        <view class="weui-cell__bd">
+				<p>{{item.name}}</p>
+				<p>{{item.address}}</p>
+	        </view>
+	        <view class="weui-cell__ft iconfont icon-dagou">
+	        	
+	        </view>
+	    </view>
+	</view>
+</template>

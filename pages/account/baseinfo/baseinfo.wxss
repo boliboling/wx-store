@@ -1,0 +1,33 @@
+.my-orderdetail {
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid #EAEAEA;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.order-title {
+    font-size: 15px;
+    color: black;
+    align-self: center;
+}
+
+.motify-real {
+    text-align: right;
+    display: flex;
+    color: #aeb3b7;
+}
+
+.secstyle {
+    margin-bottom: -10px;
+}
+
+.order-img {
+    align-self: center;
+    color: #a1a9a9;
+}
+
+.order-img:before {
+    content: "\e65b";
+    font-family: iconfont;
+}

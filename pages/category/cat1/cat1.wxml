@@ -1,0 +1,7 @@
+<template name="cat1">
+	<view class="cat1-wrap">
+		<view class="cat1-wrap-title">
+			{{item.name}}
+		</view>
+	</view>
+</template>

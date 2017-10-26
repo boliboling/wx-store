@@ -1,0 +1,29 @@
+<template name="cartSubmit">
+	<view class="cart-item-f-fx">
+		<view class="cart-submit-left">
+			<view class="cart-submit-choose-all">
+				<view class="cart-item-ft-cb" bindtap="chooseAll">
+					<p>
+						<input id="cb-footer" type="checkbox"/>
+						<label htmlFor="cb-footer" class="cb-footer {{choose_all ? 'cb-footer-checked' : ''}}"></label>
+					</p>
+				</view>
+				<view class="cart-item-qx">全选</view>
+			</view>
+			<view>
+				<view class="cart-item-pay">
+					<p class="cart-item-pay-right">
+						<view class="cart-item-hj">合计：</view>
+						<view class="cart-item-total-fee">{{total_fee}}</view>
+					</p>
+					<p>不含运费</p>
+				</view>
+			</view>
+		</view>
+		<view class="cart-item-btn" bindtap="confirm" open-type="navigate">
+			<p>
+				<view>结算({{choose_num}})</view>
+			</p>
+		</view>
+	</view>
+</template>

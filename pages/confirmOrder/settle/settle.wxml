@@ -1,0 +1,22 @@
+<template name="settle">
+	<div class="order-submitOrder">
+        <div class="mui-flex">
+            <div class="realPay">
+                <div>
+                    <span >共</span>
+                    <span class="count" >{{total_number}}</span>
+                    <span >件，总金额</span>
+                    <span class="price">
+                        <span>￥</span>
+                        <span>{{total_fee}}</span>
+                    </span>
+                </div>
+            </div>
+            <div class="action">
+                <view class="mui-flex">
+                    <span title="提交订单" bindtap="orderSave">提交订单</span>
+                </view>
+            </div>
+        </div>
+    </div>
+</template>

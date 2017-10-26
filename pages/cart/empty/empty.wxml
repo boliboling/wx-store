@@ -1,0 +1,12 @@
+<template name="empty">
+    <view class="car-container">
+        <view class="car-head">
+        </view>
+        <view class="car-body">
+            购物车空了
+        </view>
+        <navigator open-type="navigate" url="/pages/category/category" class="car-footer">
+            <button class="weui-btn" type="primary">去逛逛</button>
+        </navigator>
+    </view>
+</template>

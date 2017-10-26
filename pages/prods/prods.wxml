@@ -1,0 +1,15 @@
+<import src="/pages/prods/item/prodItem.wxml"/>
+<import src="/pages/prods/search/search.wxml"/>
+<import src="../footer/index.wxml"/>
+
+<view class="container">
+	<template is="search" data="{{inputShowed,showInput,hideInput,clearInput,inputTyping}}"/>
+	<scroll-view scroll-y style="height: 100%;" bindscrolltolower="lower">
+		<view class="prods-wrap">
+			<block wx:for="{{showlist}}" wx:key="property">
+				<template is="prodItem" data="{{item}}"/>
+			</block>
+		</view>
+	</scroll-view>
+	<template is="footer"/>
+</view>

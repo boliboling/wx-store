@@ -1,0 +1,10 @@
+<template name="swiper">
+	<swiper indicator-dots="{{true}}"
+	  autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}" style="height:{{imgheights[0]}}rpx;">
+	  <block wx:for="{{banlist}}" wx:key="property">
+	    <swiper-item>
+	      <image src="{{item}}" class="slide-image" bindload="imageLoad" style="height:{{imgheights[0]}}rpx;"/>
+	    </swiper-item>
+	  </block>
+	</swiper>
+</template>

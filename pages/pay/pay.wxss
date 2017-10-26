@@ -1,0 +1,4 @@
+/* pay.wxss */
+.weui-cells{
+	margin-top: 0;
+}

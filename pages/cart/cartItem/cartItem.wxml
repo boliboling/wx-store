@@ -1,0 +1,76 @@
+<template name="cartItem">
+	<view class="cart-list">
+		<view>
+			<view class="title">
+				<view class="title-cont">
+					<view class="title-state">
+						<view class="title-state-cont">
+							<p data-index="{{index}}" class="title-state-cont-text" bindtap="edit">{{item.edit ? '完成' : '编辑'}}</p>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cart-item">
+			<view class="cart-item-cb" data-index="{{index}}" bindtap="choose">
+				<p class="cart-item-cb-p">
+					<input class="cart-item-cb-p-cb" id="1" type="checkbox"  checked/>
+					<label htmlFor="1" class="cart-item-label {{item.choose == 1 ? 'cart-item-label-checked' : ''}}"></label>
+				</p>
+			</view>
+			<view class="cart-item-detail" >
+					<view class="cart-item-img-item">
+						<image class="cart-item-img" src='http://chygpt.b0.upaiyun.com/mhfcjx1421158741/2016/05/07/1462591214_60pq3jr4he4mcuzd.jpg'/>
+					</view>
+					<view class="{{item.edit ? 'cart-item-info-dn' : 'cart-item-info'}}">
+						<view class="cart-item-info-title clamp2">{{item.goods_name}}</view>
+						<view class="cart-item-info-sku">
+							<p>{{item.goods_attr}}</p>
+						</view>
+						<view class="cart-item-info-pay">
+							<view class="cart-item-info-pay-price">
+								<view>
+									<p class="cart-item-info-price">
+										<span>
+											{{item.goods_price}}
+										</span>
+									</p>
+								</view>
+								<view class="cart-item-info-originPrice">
+									<p> <del>￥{{item.market_price}}</del>
+									</p>
+								</view>
+							</view>
+							<view class="cart-item-info-quantity">
+								<p>
+									<span>x</span>
+									<span>{{item.number}}</span>
+								</p>
+							</view>
+						</view>
+					</view>
+					<view class="{{item.edit ? 'cart-item-info2' : 'cart-item-info2-dn'}}">
+						<view class="cart-item-info2-edit-quantity">
+							<p class="cart-item-info2-btn-minus">
+								<a class="cart-item-info2-btn" min="1" data-index="{{index}}" bindtap="delCartNum"></a>
+							</p>
+							<p class="cart-item-info2-btn-input">
+								<input class="cart-item-info2-input" type="tel" value='{{item.number}}' readOnly/>
+							</p>
+							<p class="cart-item-info2-btn-plus">
+								<a class="cart-item-info2-btn cart-item-info2-plus" data-index="{{index}}" bindtap="addCartNum"></a>
+							</p>
+						</view>
+						<view class="cart-item-info2-edit-sku clamp2">
+							<view>
+								<p>{{item.goods_attr}}</p>
+							</view>
+						</view>
+					</view>
+					<view data-index="{{index}}" class="{{item.edit ? 'cart-item-del' : 'cart-item-del-dn'}}" bindtap="delCart">
+						<p>删除</p>
+					</view>
+			</view>
+		</view>
+	</view>
+</template>

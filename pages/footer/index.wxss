@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 353877 */
+  src: url('//at.alicdn.com/t/font_fq5ezock63cjtt9.eot');
+  src: url('//at.alicdn.com/t/font_fq5ezock63cjtt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_fq5ezock63cjtt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_fq5ezock63cjtt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_fq5ezock63cjtt9.svg#iconfont') format('svg');
+}
+.other-navigator-hover{
+	color: red !important;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.15);
+	display: flex;
+	justify-content: space-around;
+	padding: 5px 0 0 0;
+}
+.footer navigator{
+	display: flex;
+	flex-direction: column;
+}
+.footer-icon{
+	text-align: center;
+	display: flex;
+	align-items: flex-end;
+	height: 100rpx;
+	justify-content: center;
+	color: #767676;
+	position: relative;
+}
+.footer-icon:before{
+	font-size: 50rpx;
+	font-family:"iconfont";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-9px);
+}
+.footer-icon-home:before{
+	content:"\e674";
+}
+.footer-icon-cat:before{
+	content:"\e7f8";
+}
+.footer-icon-shop:before{
+	content:"\e623";
+}
+.footer-icon-man:before{
+	content:"\e6a1";
+}

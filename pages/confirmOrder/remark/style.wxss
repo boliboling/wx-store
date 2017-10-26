@@ -1,0 +1,16 @@
+.weui-cell{
+    background-color: #fff;
+}
+.order-remark {
+    width: 85%;
+    background-color: #fff;
+}
+.order-remark input {
+    width: 100%;
+    color: #666;
+    font-size: 14px;
+    appearance: none;
+    border: none;
+    line-height: 1.5rem;
+    text-align: left;
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 353877 */
+  src: url('//at.alicdn.com/t/font_d18vkoulv9tz9f6r.eot');
+  src: url('//at.alicdn.com/t/font_d18vkoulv9tz9f6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_d18vkoulv9tz9f6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_d18vkoulv9tz9f6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_d18vkoulv9tz9f6r.svg#iconfont') format('svg');
+}
+html,body{
+	height: 100%;
+}
+.car-container{
+	background-color: #F3F3F3;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.car-head{
+	color: #c4c7ca;
+    font-size: 180px;
+}
+.car-head:before{
+	content: "\e655";
+    font-family: iconfont;
+}
+.car-body{}
+.car-footer{
+	 margin: 30px 40px 40px 40px;
+}

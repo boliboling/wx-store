@@ -1,0 +1,14 @@
+/* prods.wxss */
+@import './item/style.wxss';
+@import './search/style.wxss';
+@import '/pages/footer/index.wxss';
+.container{
+	background-color: #fff;
+	height: 100%;
+}
+.prods-wrap{
+	display:flex;
+	padding: 48px 0 55px 10px;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}

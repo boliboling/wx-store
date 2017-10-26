@@ -1,0 +1,7 @@
+/* category.wxss */
+@import '/pages/footer/index.wxss';
+@import './cat1/style.wxss';
+@import './cat2/style.wxss';
+.container{
+	background-color: #fff;
+}

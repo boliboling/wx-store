@@ -1,0 +1,21 @@
+.cat1-wrap{
+	margin: 10px 0;
+	position: relative;
+}
+.cat1-wrap:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 18px;
+	height: 2px;
+	background-color: #D0D0D0;
+}
+.cat1-wrap-title{
+	margin-left: 50%;
+	display: inline-block;
+	transform: translate(-50%,0);
+	background-color: #D0D0D0;
+	color: #fff;
+	padding: 3px 20px;
+}

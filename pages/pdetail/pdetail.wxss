@@ -1,0 +1,30 @@
+/* pdetail.wxss */
+@import "../footer/index.wxss";
+@import "./price/style.wxss";
+@import "./intro/style.wxss";
+@import "./footer/style.wxss";
+@import "./parameter/style.wxss";
+@import "../dialog/style.wxss";
+@import "../../wxParse/wxParse.wxss";
+
+swiper{
+	width: 100%;
+}
+image{
+	width: 100%;
+	display: block;
+	height:100%
+}
+img{
+	width: 100%;
+}
+.pdetail-info-wrap{
+	padding: 10px;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	width: 100%;
+	margin-bottom: 15px;
+}
+view{
+	box-sizing: border-box;
+}

@@ -1,0 +1,14 @@
+<import src="../footer/index.wxml"/>
+<import src="/pages/category/cat1/cat1.wxml"/>
+<import src="/pages/category/cat2/cat2.wxml"/>
+
+<view class="container">
+	<block wx:for="{{cat1_list}}" wx:key="property">
+		<template is="cat1" data="{{item}}"/>
+		<block wx:for="{{cat2_list}}" wx:key="property" wx:for-item="item2">
+			<template is="cat2" wx:if="{{item2.parentid == item.id}}" data="{{item2}}"/>
+		</block>
+	</block>
+	<template is="footer"/>
+</view>
+

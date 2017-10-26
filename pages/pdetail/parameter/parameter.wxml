@@ -1,0 +1,58 @@
+<template name="parameter">
+	<view class="{{show ? 'para-wrap-show' : 'para-wrap'}}">
+		<view class="para-wrap-bg" bindtap="hidePara">
+			
+		</view>
+		<view class="para-wrap-main">
+			<view class="para-header para-item">
+				<view class="para-left">
+					<image class="para-prod-image" src="{{info.logourl}}"/>
+				</view>
+				<view class="para-right">
+					<view class="para-name">商品名</view>
+					<view class="para-price">
+						商品价格:
+						<span>￥{{price}}</span>
+					</view>
+					<view class="para-num">商品库存：{info.num}</view>
+					<view class="para-choose">已选择：</view>
+				</view>
+			</view>
+			<view class="para-item">
+				<view class="para-title">
+					{{para.cat.norms}}
+				</view>
+				<view class="para-list">
+					<block wx:for="{{para.format_arr}}" wx:key="property">
+						<view bindtap="choosePara" data-formatid="{{item.id}}" class="para-list-item {{formatid == item.id ? 'para-list-item-choose' : ''}}">
+							{{item.value}}	
+						</view>
+					</block>
+				</view>
+				<view class="para-title">
+					{{para.cat.color}}
+				</view>
+				<view class="para-list">
+					<block wx:for="{{para.color_arr}}" wx:key="property">
+						<view bindtap="choosePara" data-colorid="{{item.id}}" class="para-list-item {{colorid == item.id ? 'para-list-item-choose' : ''}}">
+							{{item.value}}	
+						</view>
+					</block>
+				</view>
+			</view>
+			<view class="para-number para-item">
+				<view class="number-operate">
+					<view class="number-del number-item" bindtap="delShoppingNum"></view>
+					<view class="number-show number-item">{{shopping_num}}</view>
+					<view class="number-add number-item" bindtap="addShoppingNum"></view>
+				</view>
+				<view>
+					总价:<span class="total-fee">￥{{total_fee}}</span>
+				</view>
+			</view>
+			<view class="para-submit">
+				<view class="para-ok" bindtap="buyNow">确认</view>
+			</view>
+		</view>
+	</view>
+</template>

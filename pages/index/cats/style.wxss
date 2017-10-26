@@ -1,0 +1,18 @@
+.flex-wrp{
+	display:flex;
+	flex-direction:row;
+  	justify-content: space-around;
+  	width: 100%;
+  	padding: 10px 0;
+}
+.flex-item-icon{
+	display: flex;
+	justify-content: center;
+}
+.flex-item-icon image{
+	width: 50rpx;
+	height: 50rpx;
+}
+.flex-item-name{
+	text-align: center;
+}

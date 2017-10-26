@@ -1,0 +1,8 @@
+<template name="remark">
+	<view class="weui-cell">
+	    <view class="weui-cell__bd">留言</view>
+	    <view class="weui-cell__ft order-remark">
+	        <input bindblur="remark" placeholder="选填:你填一个试试？"/>
+	    </view>
+	</view>
+</template>

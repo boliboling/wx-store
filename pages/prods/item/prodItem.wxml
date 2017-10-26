@@ -1,0 +1,7 @@
+<template name="prodItem">
+	<navigator url="/pages/pdetail/pdetail?id={{item.id}}" open-type="navigate" class="prod-item">
+		<image class="prod-item-img" src="{{item.logourl}}"/>
+		<p class="prod-item-name">{{item.name}}</p>
+		<!-- <p class="prod-item-price">￥{{item.price}}</p> -->
+	</navigator>
+</template>

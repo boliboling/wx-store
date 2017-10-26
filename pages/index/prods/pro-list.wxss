@@ -1,0 +1,29 @@
+.prod-list-wrap{
+	width: 100%;
+	padding-bottom: 55px;
+}
+.prod-list-title{
+	display:flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	align-content: center;
+	align-items: center;
+}
+.prod-list-title-left{
+	position: relative;
+	text-indent: 10px;
+	font-size: 16px;
+}
+.prod-list-title-left:before{
+	content:'';
+	position: absolute;
+	width: 9px;
+	height: 90%;
+	background-color: #F6A843;
+	left: 0;
+	top: 5%;
+}
+.prod-list-title-right{
+	font-size: 14px;
+	color: #ABABAB;
+}

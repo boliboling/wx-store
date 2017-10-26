@@ -1,0 +1,13 @@
+.pdetail-item{
+	display: block;
+	border-bottom: 1px dotted #DCDCDC;
+	padding: 6px 0;
+	font-size: 14px;
+}
+.pdetail-item:last-of-type{
+	border:none;
+}
+
+.pdetail-price{
+	color:#FF5400;
+}

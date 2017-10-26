@@ -1,0 +1,9 @@
+<template name="intro">
+	<wview class="intro-wrap">
+		<view class="intro-title">
+			<view class="intro-choose active">图文详情</view>
+		</view>
+		<view class="intro-con">
+		</view>
+	</wview>	
+</template>

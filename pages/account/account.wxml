@@ -1,0 +1,15 @@
+<!--account.wxml-->
+<import src="/pages/account/baseinfo/baseinfo.wxml" />
+<import src="/pages/account/editinfo/editinfo.wxml" />
+<import src="/pages/footer/index.wxml" />
+<view class="modify-container">
+    <view class="modify-body">
+        <block wx:for="{{data_key}}" wx:key="property">
+            <view bindtap="onPostTap" data-key="{{item.key}}" data-index="{{index}}">
+                <template is="baseinfo" data="{{...item,array,indexa,date,name}}" />
+            </view>
+        </block>
+    </view>
+    <template is="editinfo" data="{{showModalStatus,onClose,key,editCon}}"/>
+    <template is="footer"/>
+</view>

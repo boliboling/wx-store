@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 353877 */
+  src: url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.eot');
+  src: url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.svg#iconfont') format('svg');
+}
+.cf,
+.cart-item-ft-cb p,
+.cart-item-qx,
+.cart-item-btn {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.cart-item-f-fx {
+	width: 100%;
+	height: 2.307rem;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top: .8rem solid transparent;
+	border-top: 1px solid #e7e7e7;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart-submit-left{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.cart-submit-choose-all{
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+	align-items: center;
+}
+
+.cart-item-ft-cb {
+	width: 1.173rem;
+}
+
+.cart-item-pay {
+	flex: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.cart-item-pay-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cart-item-pay p {
+	align-self: flex-end;
+	font-size: 12px;
+}
+
+.cart-item-hj {
+	font-size: 30rpx;
+}
+
+.cart-item-total-fee {
+	color: #f60;
+}
+
+.cart-item-btn {
+	width: 30%;
+	color: #fff;
+	background: #f50;
+	margin-left: .32rem;
+}
+
+.cart-item-btn p {
+	font-size: 0.8rem;
+}
+
+.cb-footer {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	color: #b3b3b3;
+}
+
+.cb-footer:after {
+	font-size: 1rem;
+	font-family: 'iconfont';
+	content: '\e650';
+	line-height: 1rem;
+}
+
+.cb-footer-checked {
+	color: #f50;
+}
+
+.cb-footer-checked:after {
+	content: '\e65a';
+}

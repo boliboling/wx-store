@@ -1,0 +1,13 @@
+<!--confirm.wxml-->
+<import src="/pages/confirmOrder/address/address.wxml"/>
+<import src="/pages/confirmOrder/cartItem/cartItem.wxml"/>
+<import src="/pages/confirmOrder/remark/remark.wxml"/>
+<import src="/pages/confirmOrder/settle/settle.wxml"/>
+<view class="container">
+	<template is="address" data="{{address,clickAddress}}"/>
+	<block wx:for="{{cart_list}}" wx:key="property">
+		<template is="cartItem" data="{{item,index,addCartNum,delCartNum}}"/>
+	</block>
+	<template is="remark" data="{{remark}}"/>
+	<template is="settle" data="{{total_fee,total_number,orderSave}}"/>
+</view>

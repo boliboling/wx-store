@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 353877 */
+  src: url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.eot');
+  src: url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_jqaf26pejo0nqaor.svg#iconfont') format('svg');
+}
+/* cart.wxss */
+.clamp2 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; }
+/* 购物车列表 */
+.cart-list { width: 100%; margin-top: .32rem; background: #fff; border-bottom: 1px solid #e7e7e7; }
+.title { width: 100%; padding-left: .32rem; box-sizing: border-box; background: #fff; position: relative; }
+.title-cont { width: 100%; height: 1.5rem; display:flex; justify-content: flex-end; align-content: center; }
+.title-state { margin-left: .32rem; display:flex; }
+.title-state-cont { flex: 1; align-items: center; display:flex; cursor: pointer; }
+.title-state-cont-text { font-size: 13px; text-align: center; cursor: pointer; width: 2rem; }
+
+.cart-item { width: 100%; padding-left: 0; box-sizing: border-box; background: #fff; display:flex; }
+
+/* 购物车checkbox */
+.cart-item-cb { align-items: center; display:flex; width: 1.5rem; position: relative; justify-content: center; }
+.cart-item-cb-p { height: 2.533rem; align-items: center; display:flex; }
+.cart-item-cb-p-cb { display: none; }
+.cart-item-label { display: inline-block; width: 1rem; height: 1rem; color: #b3b3b3; }
+.cart-item-label:after { font-size: 1rem; font-family: 'iconfont'; content: '\e650'; line-height: 1rem; }
+.cart-item-label-checked { color: #f50; }
+.cart-item-label-checked:after { content: '\e65a'; }
+/* 商品详情 */
+.cart-item-detail {	display:flex; flex: 1; width: 100%;}
+
+.cart-item-img-item { width: 4rem; height:4rem; margin: 0.16rem 0 0.16rem 0.32rem; overflow: hidden; background: #fff; overflow: hidden; }
+.cart-item-img { max-width: 100%; transform: translateZ(0); }
+/* 商品显示内容 */
+.cart-item-info {flex: 1; padding: 0.16rem 0.32rem; box-sizing: border-box; }
+.cart-item-info-dn {flex: 1; padding: 0.16rem 0.32rem; box-sizing: border-box; display: none;}
+.cart-item-info-title { font-size: 15px; line-height: 15px; height: 15px; }
+.cart-item-info-sku { font-size: 13px; color: #999; min-height: 31px; margin-top: 0.3rem; line-height: 15px; }
+.cart-item-info-pay { display:flex; width: 100%; line-height: 0.4rem; }
+.cart-item-info-pay-price { flex: 1; width: 100%; display: flex; flex-direction: row;}
+.cart-item-info-price { color: #f60; font-size: 14px;}
+.cart-item-info-price:before { content: '￥'; }
+.cart-item-info-originPrice { margin-left: 0.3rem; }
+.cart-item-info-originPrice del { font-size: 13px; color: #999; }
+.cart-item-info-quantity { text-align: right; }
+.cart-item-info-quantity p { font-size: 0.7rem; }
+/* 商品编辑内容 */
+.cart-item-info2 { flex: 1; }
+.cart-item-info2-dn { flex: 1; display: none; }
+.cart-item-info2-edit-quantity { height: 1.5rem; margin: 0.2rem 0; display: flex; border-bottom: 1px solid #fff; }
+.cart-item-info2-btn-minus, .cart-item-info2-btn-plus { width: 2.2rem; }
+.cart-item-info2-btn { display: block; height: 100%; position: relative; }
+.cart-item-info2-btn:before, .cart-item-info2-btn:after { position: absolute; top: 0.6rem; left: 0.7rem; border-bottom: 0.1rem solid #878787; width: 0.6rem; height: 1px; content: ' '; }
+.cart-item-info2-btn-input { flex: 1; width: 100%; border-left: 1px solid #fff; border-right: 1px solid #fff; }
+.cart-item-info2-plus { display: block; height: 100%; position: relative; }
+.cart-item-info2-plus:before { transform: rotate(90deg); }
+.cart-item-info2-input { width: 100%; height: 1.04rem; text-align: center; border: none; }
+.cart-item-info2-edit-sku { color: #999; font-size: 0.65rem; padding-left: 0.5rem; margin: 0 0.08rem; box-sizing: boder-box; position: relative; height: 1.7rem; padding-right: 0.853rem; }
+/* 删除按钮 */
+.cart-item-del,.cart-item-del-dn { display:flex; width: 2.5rem; color: #fff; background: #f60; align-items: center; justify-content: center; overflow: hidden; }
+.cart-item-del-dn { display: none;}
+.cart-item-del p { font-size: 12px; }
+
+/* 购物车底部 */
+.cf,.cart-item-qx,.cart-item-ft-cb,.cart-item-btn { justify-content: center; align-items: center; display:flex; }
+.cart-item-f-fx {width: 100%; height: 3rem; background: #fff; position: fixed; left: 0; right: 0; bottom: 0; border-top: .8rem solid transparent; border-top: 1px solid #e7e7e7; display:flex; }
+.cart-item-ft-cb { width: 1.173rem;}
+.cart-item-pay { flex: 1; align-items: center; display:flex; }
+.cart-item-pay > div { flex: 1; text-align: right; }
+.cart-item-pay p { font-size: 0.6rem; }
+.cart-item-hj { font-size: 0.7rem; }
+.cart-item-total-fee { color: #f60; }
+.cart-item-btn { width: 4.5rem; color: #fff; background: #f50; margin-left: .32rem; }
+.cart-item-btn p { font-size: 0.8rem; }

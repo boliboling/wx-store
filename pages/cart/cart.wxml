@@ -1,0 +1,13 @@
+<!--cart.wxml-->
+<import src="/pages/cart/cartItem/cartItem.wxml"/>
+<import src="/pages/cart/submit/submit.wxml"/>
+<import src="/pages/cart/empty/empty.wxml"/>
+<import src="/pages/footer/index.wxml"/>
+<view class="container">
+	<block wx:if="{{list.length != 0}}" wx:for="{{list}}" wx:key="property">
+		<template wx:if = "{{item.delete == 0}}" is='cartItem' data="{{item,edit,index,addCartNum,delCartNum,finishEditCart,choose,delCart}}" />
+		<template is='cartSubmit' data="{{chooseAll,choose_all,total_fee,choose_num,confirm}}"/>
+	</block>
+	<template wx:if="{{list.length == 0}}" is="empty"/>
+	<template is="footer"/>
+</view>

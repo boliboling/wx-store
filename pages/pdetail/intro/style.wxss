@@ -1,0 +1,18 @@
+.intro-wrap{
+	width: 100%;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 44px;
+}
+.intro-title{
+	border-bottom: 1px solid #DCDCDC;
+}
+.intro-choose{
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	line-height: 40px;
+}
+.active{
+	border-top: 2px solid #FF5400;
+}

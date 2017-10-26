@@ -1,0 +1,32 @@
+<template name="cartItem">
+	<view class="weui-cells__title">商品描述</view>
+	<view class="weui-cells">
+		<view class="weui-cell">
+            <view class="weui-cell__hd">
+            	<image class="product-logo" src="http://chygpt.b0.upaiyun.com/mhfcjx1421158741/2016/05/07/1462591214_60pq3jr4he4mcuzd.jpg"/>
+            </view>
+            <view class="weui-cell__bd">
+                <p class="order-product-name">{{item.goods_name}}</p>
+                <p class="sku-info">{{item.goods_attr}}</p>
+            </view>
+            <view class="weui-cell__ft">
+            	<p class="main-price">￥{{item.goods_price}}</p>
+            	<p>×{{item.number}}</p>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">购买数量</view>
+                <view class="weui-cell__ft">
+                    <view class="order-quantity">
+                        <view class="content">
+                            <a data-index="{{index}}" class="minus" bindtap="delCartNum"></a>
+                            <div class="amount">{{item.number}}</div>
+                            <a data-index="{{index}}" class="plus" bindtap="addCartNum"></a>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+	</view>
+</template>

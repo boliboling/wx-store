@@ -1,0 +1,12 @@
+<import src="/pages/index/prodItem/prodItem.wxml"/>
+<template name="prods">
+    <view class="prod-list-wrap">
+        <block wx:for="{{cats}}" wx:key="property">
+            <view wx:if="{{item.parentid != 0}}" class="prod-list-title">
+                <view class="prod-list-title-left">{{item.name}}</view>
+                <navigator open-type="navigate" url="/pages/prods/prods?cid={{item.id}}" class="prod-list-title-right">更多>></navigator>
+            </view>
+            <template is="prodItem" data="{{item}}"/>
+        </block>
+    </view>
+</template>

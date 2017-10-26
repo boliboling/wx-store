@@ -1,0 +1,12 @@
+<template name="cats">
+    <view class="flex-wrp">
+        <block wx:for="{{cats}}" wx:key="property">
+            <navigator wx:if="{{item.parentid == 0}}" open-type="navigate" url="/pages/prods/prods?cid={{item.id}}" class="flex-item">
+                <view class="flex-item-icon">
+                    <image src="{{item.logourl}}"></image>
+                </view>
+                <view class="flex-item-name">{{item.name}}</view>
+            </navigator>
+        </block>
+    </view>
+</template>

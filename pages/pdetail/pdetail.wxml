@@ -1,0 +1,18 @@
+<!--pdetail.wxml-->
+<import src="../swiper/index.wxml"/>
+<import src="/pages/pdetail/price/price.wxml"/>
+<import src="/pages/pdetail/intro/intro.wxml"/>
+<import src="/pages/pdetail/footer/submit.wxml"/>
+<import src="/pages/pdetail/parameter/parameter.wxml"/>
+<import src="/pages/dialog/dialog.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view class="container">
+	<template is="swiper" data="{{banlist}}"/>
+	<template is="price" data="{{info}}"/>
+	<template is="intro"/>
+	<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	<template is="parameter" data="{{info,price,formatid,colorid,choosePara,para,show,hidePara,shopping_num,addShoppingNum,delShoppingNum,total_fee,buyNow}}"/>
+	<!-- <template is="submit" data="{{showPara,addToCart,collect,collection,cart_num}}"/> -->
+	<template is="dialog" data="{{showDialog,toggleDialog}}"/>
+</view>

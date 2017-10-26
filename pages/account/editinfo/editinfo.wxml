@@ -1,0 +1,14 @@
+<template name="editinfo">
+    <view class="drawer_screen" wx:if="{{showModalStatus}}" bindtap="onClose"></view>
+    <view class="drawer_box" wx:if="{{showModalStatus}}">
+        <form bindsubmit="onSure_click" class="drawer_content">
+            <view lass="pop-email">
+                <view class="email-button" bindtap="onClose"></view>
+                <view class="email-input">
+                    <input class="input-info" type="text" name="info" value="{{editCon}}" placeholder="{{key=='email' ? '请输入邮箱' : '请输入姓名'}}" />
+                </view>
+                <button class="name-sure" formType="submit">确认</button>
+            </view>
+        </form>
+    </view>
+</template>

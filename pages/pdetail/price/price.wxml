@@ -1,0 +1,6 @@
+<template name="price">
+	<view class="pdetail-info-wrap">
+		<wview class="pdetail-item pdetail-name">{{info.name}}</wview>
+		<wview class="pdetail-item pdetail-price">销售价：￥{{info.price}}</wview>
+	</view>
+</template>

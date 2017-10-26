@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<import src="../footer/index.wxml"/>
+<import src="../swiper/index.wxml"/>
+<import src="/pages/index/cats/cats.wxml"/>
+<import src="/pages/index/prods/prods.wxml"/>
+<import src="/pages/index/prodItem/prodItem.wxml"/>
+
+<view class="container">
+	<!-- 轮播图 -->
+	<template is="swiper" data="{{banlist,imageLoad,imgheights}}"/>
+	<!-- 分类 -->
+	<template is="cats" data="{{cats}}"/>
+
+	<!-- 商品列表 -->
+	<!-- <template is="prods" data="{{cats}}"/> -->
+    <template is="prodItem" data="{{prod_list:prod_list}}"/>
+
+	<template is="footer"/>
+</view>

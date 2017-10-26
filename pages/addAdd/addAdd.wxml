@@ -1,0 +1,27 @@
+<!--addAdd.wxml-->
+<view class="container">
+	<form bindsubmit="formSubmit" bindreset="formReset"> 
+		<view class="weui-cells weui-cells_after-title">
+		    <view class="weui-cell">
+		        <view class="weui-cell__bd">
+		        	<input class="weui-input" type="text" name="name" placeholder="姓名"/>
+		        </view>
+		        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+		    </view>
+		    <view class="weui-cell">
+		        <view class="weui-cell__bd">
+		        	<input class="weui-input" type="number" name="tele" placeholder="电话"/>
+		        </view>
+		        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+		    </view>
+		    <view class="weui-cell">
+		        <view class="weui-cell__bd">
+		        	<input class="weui-input" type="text" name="address" placeholder="详细地址"/>
+		        </view>
+		        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+		    </view>
+	    	<button class="weui-btn" type="primary" formType="submit">保存</button>
+	    	<!-- <button class="weui-btn" type="primary" formType="reset">重置</button> -->
+		</view>
+	</form>
+</view>

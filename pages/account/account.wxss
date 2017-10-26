@@ -1,0 +1,34 @@
+/* pages/account/account.wxss */
+@import "./baseinfo/baseinfo.wxss";
+@import "./editinfo/style.wxss";
+@import '/pages/footer/index.wxss';
+
+@font-face { font-family: 'iconfont';  /* project id 353877 */ src: url('//at.alicdn.com/t/font_x7q7ju9byb2lc8fr.eot'); src: url('//at.alicdn.com/t/font_x7q7ju9byb2lc8fr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_x7q7ju9byb2lc8fr.woff') format('woff'), url('//at.alicdn.com/t/font_x7q7ju9byb2lc8fr.ttf') format('truetype'), url('//at.alicdn.com/t/font_x7q7ju9byb2lc8fr.svg#iconfont') format('svg'); }
+.modify-container { background-color: #F3F3F3; height: 100%; overflow: hidden; padding-bottom: 55px;}
+.modify-body { margin-top: 10px; }
+
+/*button*/
+.btn { width: 80%; padding: 20rpx 0; border-radius: 10rpx; text-align: center; margin: 40rpx 10%; background: #000; color: #fff; }
+.modify-img { width: 130rpx; height: 120rpx; border-radius: 50%; text-align: right; display: block; }
+
+/*content*/
+.btn_ok { padding: 10px; font: 20px "microsoft yahei"; text-align: center; border-top: 1px solid #E8E8EA; color: #3CC51F; }
+.top { padding-top: 8px; }
+.bottom { padding-bottom: 8px; }
+.title { height: 30px; line-height: 30px; width: 160rpx; text-align: center; display: inline-block; font: 300 28rpx/30px "microsoft yahei"; }
+.input_base { border: 2rpx solid #ccc; padding-left: 10rpx; margin-right: 50rpx; }
+.input_h30 { height: 30px; line-height: 30px; }
+.input_h60 { height: 60px; }
+.input_view { font: 12px "microsoft yahei"; background: #fff; color: #000; line-height: 30px; }
+input { font: 12px "microsoft yahei"; background: #fff; color: #000; }
+radio { margin-right: 20px; }
+.grid { display: -webkit-box; display: box; }
+.col-0 { -webkit-box-flex: 0; box-flex: 0; }
+.col-1 { -webkit-box-flex: 1; box-flex: 1; }
+.fl { float: left; }
+.fr { float: right; }
+.input-info { border: none; outline: none; font-size: 18px; align-self: center; padding-left: 5vw; }
+.reg-bom-info { width: 100%; margin-top: 20px; color: #333232; margin-left: 15px; }
+.reg-bom-infoa { font-size: 1.5em; text-align: left; margin-left: 10px; }
+.reg-bom-infob { font-size: 20px; text-align: left; margin: 10px; }
+.reg-bom-title { font-size: 20px; color: #2fb146; text-align: right; margin: 0px 30px 0px 0px; }

@@ -1,0 +1,9 @@
+/* confirm.wxss */
+@import './address/style.wxss';
+@import './cartItem/style.wxss';
+@import './remark/style.wxss';
+@import './settle/style.wxss';
+
+p { 
+	display: block;
+}

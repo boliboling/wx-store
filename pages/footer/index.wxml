@@ -1,0 +1,19 @@
+<template name="footer">
+	<view class="footer">
+		<navigator url="/pages/index/index" open-type="redirect" hover-class="other-navigator-hover">
+			<view class="footer-icon footer-icon-home">首页</view>
+		</navigator>
+		<!-- <navigator url="/pages/category/category" open-type="redirect" hover-class="other-navigator-hover">
+			<view class="footer-icon footer-icon-cat">分类</view>
+		</navigator> -->
+		<navigator url="/pages/prods/prods" open-type="redirect" hover-class="other-navigator-hover">
+			<view class="footer-icon footer-icon-cat">产品</view>
+		</navigator>
+		<navigator url="/pages/cart/cart" open-type="redirect" hover-class="other-navigator-hover">
+			<view class="footer-icon footer-icon-shop">购物车</view>
+		</navigator>
+		<navigator url="/pages/account/account" open-type="redirect" hover-class="other-navigator-hover">
+			<view class="footer-icon footer-icon-man">个人</view>
+		</navigator>
+	</view>
+</template>

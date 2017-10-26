@@ -1,0 +1,8 @@
+.drawer_screen{width:100%;height:100%;position:fixed;top:0;left:0;z-index:100;background:#000;opacity:0.5;overflow:hidden;}
+.drawer_box{width:100%;overflow:hidden;position:fixed;top:0;z-index:100;background:#FAFAFA;border-radius:3px;}
+.drawer_content{height:160px;overflow-y:scroll;}
+.pop-email{display:none;background-color:white;position:absolute;width:100%;height:40vw;}
+.email-button:before{content:"\e602";font-family:iconfont;}
+.email-button{margin:10px;text-align:right;color:#b1aba3;font-size:25px;}
+.email-input{background-color:white;line-height:10vw;border:1px solid #dedcd8;margin:0px 10px 15px 10px;}
+.email-sure,.name-sure{background-color:#f7f4f4;line-height:10vw;margin:0px 10px 15px 10px;border:1px solid #dedcd8;text-align:center;border-radius:5px;}

@@ -1,0 +1,38 @@
+<template name="baseinfo">
+    <!-- 修改性别 -->
+    <picker wx:if="{{key=='sex'}}" wx:if="{{key=='sex'}}" bindchange="bindPickerChange" value="{{indexa}}" range="{{array}}">
+        <view class="my-orderdetail">
+            <view class="order-title">{{value}}</view>
+            <view class="motify-real">
+                <view>
+                     <view>{{info == 1 ? '男' : '女'}}</view>
+                </view>
+                <view wx:if="{{flag=='true'}}" class="order-img"></view>
+            </view>
+        </view>
+    </picker>
+    <!-- 修改生日 -->
+    <picker wx:elif="{{key=='birthday'}}" mode="date" value="{{info}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+
+        <view class="my-orderdetail">
+            <view class="order-title">{{value}}</view>
+            <view class="motify-real">
+                <view>
+                     <view>{{info}}</view>
+                </view>
+                <view wx:if="{{flag=='true'}}" class="order-img"></view>
+            </view>
+        </view>
+    </picker>
+    <!-- 默认情况 -->
+    <view wx:else class="my-orderdetail">
+        <view class="order-title">{{value}}</view>
+        <view class="motify-real">
+            <view>
+                <image wx:if="{{key == 'headimgurl'}}" src="{{info}}" class="modify-img"></image>
+                <view wx:else>{{info}}</view>
+            </view>
+            <view wx:if="{{flag=='true'}}" class="order-img"></view>
+        </view>
+    </view>
+</template>

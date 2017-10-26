@@ -1,0 +1,10 @@
+<!--address.wxml-->
+<import src="/pages/address/item/item.wxml"/>
+<view class="container">
+	<block wx:for="{{list}}" wx:key="property">
+		<template is="addressItem" data="{{item,chooseDefault,index}}"/>
+	</block>
+	<navigator url="/pages/addAdd/addAdd" open-type="redirect">
+    	<button class="weui-btn" type="primary" >新增地址</button>
+	</navigator>
+</view>

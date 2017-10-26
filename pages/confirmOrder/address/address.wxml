@@ -1,0 +1,17 @@
+<template name="address">
+	<view class="weui-cells order-address">
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <view class="weui-cell__hd icon-dingwei">
+            	
+            </view>
+            <view bindtap="clickAddress" open-type="navigate" class="weui-cell__bd">
+                <p wx:if="{{address}}">{{address.address}}</p>
+                <p wx:if="{{address}}">{{address.tele}}</p>
+                <p wx:if="{{!address}}">点击添加地址</p>
+            </view>
+            <view class="weui-cell__ft_in-access">
+                
+            </view>
+        </a>
+    </view>
+</template>

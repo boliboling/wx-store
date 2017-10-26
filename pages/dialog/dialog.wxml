@@ -1,0 +1,18 @@
+<template name="dialog">
+	<view class="dialog-wrap {{showDialog ? '' : 'dialog-wrap-dn'}}">
+		<view class="dialog-bg" bindtap="toggleDialog"></view>
+		<view class="dialog-main">
+			<view class="dialog-con">
+				加入成功
+			</view>
+			<view class="dialog-btn-wrap">
+				<view class="dialog-btn" bindtap="toggleDialog">
+					确定
+				</view>
+				<!-- <view class="dialog-btn">
+					确定
+				</view> -->
+			</view>
+		</view>
+	</view>
+</template>

@@ -1,0 +1,16 @@
+<template name="prodItem">
+	<view class="prod-item-wrap2">
+		<block wx:for="{{prod_list}}" wx:key="property">
+			<navigator url="/pages/pdetail/pdetail?id={{item.id}}" open-type="navigate" class="prod-item">
+			    <wview class="prod-item-img">
+			        <image src="{{item.logourl}}" />
+			    </wview>
+			    <wview class="prod-item-detail">
+			        <wview class="prod-item-name">{{item.name}}</wview>
+			        <!-- <wview class="prod-item-price">￥{{item.price}}</wview> -->
+			        <!-- <wview class="prod-item-num">销量:{{item.salecount}}</wview> -->
+			    </wview>
+			</navigator>
+		</block>
+	</view>	
+</template>

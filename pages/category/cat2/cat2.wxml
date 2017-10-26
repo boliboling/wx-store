@@ -1,0 +1,12 @@
+<template name="cat2">
+	<view class="cat2-wrap">
+		<navigator open-type="navigate" url="{{'/pages/prods/prods?cid='+item2.id}}" class="cat2-item">
+			<p class="cat2-item-icon">
+				<image src="{{item2.logourl}}"/>
+			</p>
+			<p class="cat2-item-name">
+				{{item2.name}}
+			</p>
+		</navigator>
+	</view>
+</template>
